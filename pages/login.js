@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react/no-unescaped-entities */
 import React, { useContext, useEffect, useState } from "react";
 import {
   Button,
@@ -76,7 +78,7 @@ export default function Login() {
             </Button>
           </ListItem>
           <ListItem>
-            Don&apos;t have an account? &nbsp;
+            Don't have an account? &nbsp;
             <NextLink href="/register" passHref>
               <Link>Register</Link>
             </NextLink>

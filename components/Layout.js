@@ -9,7 +9,6 @@ import {
   Link,
   ThemeProvider,
   CssBaseline,
-  Switch,
   Badge,
   Button,
   Menu,
@@ -78,7 +77,6 @@ export default function Layout({ title, children, description }) {
               </Link>
             </NextLink>
             <div className={classes.grow}></div>
-            <Switch checked={true}></Switch>
             <NextLink href="#/cart" passHref>
               <Link>
                 <Badge color="secondary" badgeContent={3}>
