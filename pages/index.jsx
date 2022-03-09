@@ -13,7 +13,7 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <Layout>
-      <div>
+      <>
         <h1>Products</h1>
         <Grid container spacing={3}>
           <Grid item md={4} key={1}>
@@ -83,7 +83,7 @@ export default function Home() {
             </Card>
           </Grid>
         </Grid>
-      </div>
+      </>
     </Layout>
   );
 }

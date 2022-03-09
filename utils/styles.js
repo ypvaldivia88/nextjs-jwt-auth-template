@@ -8,6 +8,9 @@ const useStyles = makeStyles({
       marginLeft: 10,
     },
   },
+  navbarItem: {
+    marginRight: 10,
+  },
   brand: {
     fontWeight: "bold",
     fontSize: "1.5rem",
@@ -16,6 +19,10 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   main: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  content: {
     minHeight: "80vh",
   },
   footer: {
@@ -33,6 +40,10 @@ const useStyles = makeStyles({
   navbarButton: {
     color: "#ffffff",
     textTransform: "initial",
+  },
+  profileAvatar: {
+    width: 80,
+    height: 80,
   },
 });
 
