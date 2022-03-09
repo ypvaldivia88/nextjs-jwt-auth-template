@@ -21,9 +21,8 @@ const useStyles = makeStyles({
   main: {
     display: "flex",
     flexDirection: "column",
-  },
-  content: {
-    minHeight: "80vh",
+    justifyContent: "center",
+    minHeight: "85vh",
   },
   footer: {
     marginTop: 10,
@@ -40,10 +39,6 @@ const useStyles = makeStyles({
   navbarButton: {
     color: "#ffffff",
     textTransform: "initial",
-  },
-  profileAvatar: {
-    width: 80,
-    height: 80,
   },
 });
 

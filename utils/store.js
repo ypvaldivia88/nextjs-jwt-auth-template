@@ -3,17 +3,16 @@ import { createContext, useReducer } from "react";
 
 export const Store = createContext();
 const initialState = {
-  userInfo: Cookies.get("userInfo")
-    ? JSON.parse(Cookies.get("userInfo"))
+  exampleInfo: Cookies.get("exampleInfo")
+    ? JSON.parse(Cookies.get("exampleInfo"))
     : null,
 };
 
 function reducer(state, action) {
   switch (action.type) {
-    case "USER_LOGIN":
-      return { ...state, userInfo: action.payload };
-    case "USER_LOGOUT":
-      return { ...state, userInfo: null, cart: { cartItems: [] } };
+    case "EXAMPLE_ACTION":
+      Cookies.set("exampleInfo", JSON.stringify(action.payload));
+      return { ...state, exampleInfo: action.payload };
     default:
       return state;
   }

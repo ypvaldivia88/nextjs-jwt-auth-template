@@ -119,7 +119,7 @@ export default function Layout({ title, children, description }) {
               )}
             </Toolbar>
           </AppBar>
-          <Container className={classes.content}>{children}</Container>
+          <Container className={classes.main}>{children}</Container>
           <footer className={classes.footer}>
             <Typography>All rights reserved. Company Name 2022.</Typography>
           </footer>

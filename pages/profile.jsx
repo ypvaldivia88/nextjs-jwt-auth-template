@@ -23,24 +23,26 @@ function Profile() {
         <Layout>
           <>
             <Grid container spacing={3}>
-              <Card sx={{ maxWidth: 100 }}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={user.picture}
-                  alt="user avatar"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {user.nickname}
-                  </Typography>
-                  <Typography variant="body2">{user.email}</Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Share</Button>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>
+              <Grid item xs={12} md={4}>
+                <Card sx={{ maxWidth: 100 }}>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={user.picture}
+                    alt="user avatar"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {user.nickname}
+                    </Typography>
+                    <Typography variant="body2">{user.email}</Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">Share</Button>
+                    <Button size="small">Learn More</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
             </Grid>
           </>
         </Layout>
